@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shortened URL</title>
@@ -17,7 +18,13 @@
     <div class="card">
       <h2 class="card-title">Your Shortened URL</h2>
       <p>Shortened URL:</p>
-      <a href="<%= shortUrl %>" target="_blank" class="short-url"><%= shortUrl %></a>
+      <a id ="shorturl" href="<%= shortUrl %>" target="_blank" class="short-url"><%= shortUrl %></a>
+      <br>
+      <button class="submit-button" style="--content: 'COPY CODE'" onclick="copy()" id="button">
+        <div class="left" ></div>
+        COPY CODE
+        <div class="right"></div>
+      </button>
     </div>
   </main>
   <footer>
