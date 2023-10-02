@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">URL Shortener</h1>
+    <a href="https://github.com/Neeraj-x0" target="_blank" class="github-container">
+      GitHub
+    </a>
+  </header>
+  <main>
+    <div class="card">
+      <h2 class="card-title">Shorten your URL</h2>
+      <form action="/shorten" method="post">
+        <div class="input-container">
+          <label for="originalUrl">Enter your URL:</label>
+          <input type="text" name="originalUrl" id="originalUrl" required>
+        </div>
+        <div class="input-container">
+          <label for="customShortId">Custom Short ID (optional):</label>
+          <input type="text" name="customShortId" id="customShortId">
+        </div>
+        <button type="submit" class="submit-button">Shorten</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    &copy; 2023 URL Shortener
+  </footer>
+</body>
+</html>
