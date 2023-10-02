@@ -38,7 +38,7 @@ app.post("/shorten", async (req, res) => {
   }
 });
 
-app.get("/s/:shortUrl", async (req, res) => {
+app.get("/:shortUrl", async (req, res) => {
   const { shortUrl } = req.params;
 
   const url = await Url.findOne({ shortUrl });
