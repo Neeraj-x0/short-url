@@ -4,7 +4,7 @@ const shortid = require("shortid");
 
 const app = express();
 mongoose.connect(
-  "mongodb+srv://neeraj:GkBMYIB0F1JgvJdA@urlshortener.kyacjm7.mongodb.net/?retryWrites=true&w=majority",
+  "ENTER YOUR MONGODB URL HERE",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
